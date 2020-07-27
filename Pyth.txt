@@ -1,0 +1,39 @@
+ido mes mauqilA tile gnicsipida rutetcesnoc tema tis rolod muspi meroL
+i,d,o,m,e,s,m,a,u,q,i,l,A,t,i,l,e,g,n,i,c,s,i,p,i,d,a,r,u,t,e,t,c,e,s,n,o,c,t,e,m,a,t,i,s,r,o,l,o,d,m,u,s,p,i,m,e,r,o,L
+Every string in  ['adipiscing', 'Aliquam', 'Suspendisse'] were present
+['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipiscing', 'elit', 'Aliquam', 'sem', 'odio', 'varius', 'nec', 'aliquam', 'nec', 'tempor', 'commodo', 'ante', 'Pellentesque', 'sit']
+['ultricies', 'ac', 'mattis', 'erat', 'aliquet', 'pretium', 'risus', 'Nullam', 'congue', 'lacus', 'mollis', 'nulla', 'laoreet', 'Cras', 'rutrum', 'justo', 'volutpat', 'bibendum', 'nibh', 'tortor']
+851
+ido mes mauqilA tile gnicsipida rutetcesnoc tema tis rolod muspi meroL
+i,d,o,m,e,s,m,a,u,q,i,l,A,t,i,l,e,g,n,i,c,s,i,p,i,d,a,r,u,t,e,t,c,e,s,n,o,c,t,e,m,a,t,i,s,r,o,l,o,d,m,u,s,p,i,m,e,r,o,L
+Every string in ['adipiscing', 'Aliquam', 'Suspendisse'] were  present
+['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipiscing', 'elit', 'Aliquam', 'sem', 'odio', 'varius', 'nec', 'aliquam', 'nec', 'tempor', 'commodo', 'ante', 'Pellentesque', 'sit']
+['ultricies', 'ac', 'mattis', 'erat', 'aliquet', 'pretium', 'risus', 'Nullam', 'congue', 'lacus', 'mollis', 'nulla', 'laoreet', 'Cras', 'rutrum', 'justo', 'volutpat', 'bibendum', 'nibh', 'tortor']
+851
+
+   # check for factors
+  #  x1=[x for x in range(2,num) if x%2==0]
+      if val==1:
+        x1=[x for x in range(2,num) if x/2==0]
+        for b in x1:
+           if (num % b !=0):
+              yeild=b
+      else:
+        x2=[x for x in range(2,num) if x%2!=0]
+        for a in x2:
+           if (num % a !=0):
+              yeild=a
+
+#  x1=[x for x in range(2,num) if x%2==0]
+       for n in range(2,num): 
+          if n % 2 != 0: 
+     #         for b in x1:
+                  if (num % n  !=0):
+                    yeild=n
+          else:
+              for n in range(2,num): 
+                if n % 2 == 0: 
+ #                for b in x1:
+                  if (num % n !=0):
+                    yeild=n
+
