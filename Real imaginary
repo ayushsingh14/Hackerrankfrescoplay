@@ -1,0 +1,19 @@
+class comp:
+    def __init__(self,real,img):
+        self.real=real
+        self.img= img
+        
+   
+    def  sub(self,other):
+         self.real1=  self.real-other.real 
+         self.img1=  self.img-other.img 
+         if(self.img1>=0):
+            print("Subtraction of the two Complex numbers :{}+{}i".format(self.real1,self.img1))
+         else:
+            print("Subtraction of the two Complex numbers :{}{}i".format(self.real1,self.img1))
+    def  add(self,other):
+         self.real3=self.real + other.real
+         self.img4=self.img + other.img
+         if(self.img4>=0):
+            print("Sum of the two Complex numbers :{}+{}i".format(self.real3,self.img4))
+         else:
