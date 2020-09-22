@@ -1,0 +1,32 @@
+ for myChar in special1:
+        para = para.replace(myChar,"")
+    word1=para
+
+    rword2=word1[69::-1]
+
+    print(rword2)
+
+    myspaceremove=rword2.replace(" ", "")
+    myspaceremove=myspaceremove.replace("  ", "")
+    myword= special2.join(myspaceremove)
+
+    print(myword)
+    if all(SearchStr in para for SearchStr in list1):
+        print("Every string in  %s were present" %list1)
+    else:
+        print("Every string in  %s were not present" %list1)
+    number=word1
+    splitAll = number.split()
+    print(splitAll[0:20])
+    
+    mylist=[]
+    myDict = dict()
+    for t in splitAll:
+        myDict[t]=myDict.get(t,0)+1
+    for x,y in myDict.items():
+        if(y<3):
+            mylist.append(x)
+
+
+    print(mylist[-20:])
+    print(word1.rfind(strfind))
