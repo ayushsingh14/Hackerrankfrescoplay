@@ -3,6 +3,10 @@ class Movie:
   self.name = name
   self.n = n
   self.cost = cost
-        
+ 
  def __str__(self):
-  return 'Movie : {self.name}\nNumber of Tickets : {self.n}\nTotal Cost: {self.cost}'.format(self=self)    
+          string = """Movie : {}
+Number of Tickets : {}
+Total Cost : {}""".format(self.name, self.n, self.cost)
+          return string
+  
