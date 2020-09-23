@@ -1,0 +1,13 @@
+class rectangle:
+    def display(self):
+        print("This is a Rectangle")
+    def area(self,Length,breadth):
+        a=Length * breadth
+        print('Area of Rectangle is  {}'.format(a))
+# Write your code here
+class square():
+    def display(self):
+        print("This is a Square")
+    def area(self,side):
+        ar=side*side
+        print('Area of square is  {}'.format(ar))
