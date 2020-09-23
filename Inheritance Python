@@ -1,0 +1,16 @@
+class son(parent):
+    def __init__(self,total_asset,Percentage_for_son):
+     self.Percentage_for_son =Percentage_for_son
+     parent.__init__(self,total_asset)
+    def son_display(self):
+        self.a=(self.Percentage_for_son * self.total_asset)/100
+        print("Share of Son is {} Million.".format(self.a))
+
+class daughter(parent):
+    def __init__(self,total_asset,Percentage_for_daughter):
+        self.Percentage_for_daughter=Percentage_for_daughter
+        parent.__init__(self,total_asset)
+    def daughter_display(self):
+        self.b=(self.Percentage_for_daughter * self.total_asset)/100
+        
+        print("Share of Daughter is {} Million.".format(self.b))
