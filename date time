@@ -1,0 +1,32 @@
+import datetime
+#
+# Complete the 'dateandtime' function below.
+#
+# The function accepts INTEGER val as parameter.
+# The return type must be LIST.
+#
+
+def dateandtime(val,tup):
+    # Write your code here
+  list1 = []
+  if val==1:
+    time1 = datetime.date(tup[0],tup[1],tup[2]).strftime("%d/%m/%Y")
+    list1.append(datetime.date(tup[0],tup[1],tup[2]))
+    list1.append(time1)
+  elif val==2:
+    time1 = datetime.date.fromtimestamp(tup[0])
+    list1.append(time1)
+  elif val==3:
+    time1 = datetime.time(tup[0],tup[1],tup[2])
+    list1.append(datetime.time(tup[0],tup[1],tup[2]))
+    list1.append(time1.strftime("%I"))
+  elif val==4:
+    time1 = datetime.date(tup[0],tup[1],tup[2])
+    list1.append(time1.strftime("%A"))
+    list1.append(time1.strftime("%B"))
+    list1.append(time1.strftime("%j"))
+  elif val==5:
+    time1 = (datetime.datetime(tup[0],tup[1],tup[2],tup[3],tup[4],tup[5]))
+    list1.append(time1)
+
+  return list1
