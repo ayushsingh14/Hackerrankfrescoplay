@@ -23,7 +23,7 @@ def performIterator(tuplevalues):
     count=0
     print(len(tuplevalues[0]))
     for i in itertools.cycle(tuplevalues[0]):  
-        if count>=len(tuplevalues[0]):  
+        if count>=4:  
             break
         else:  
             u.append(i)  
